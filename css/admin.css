@@ -1,0 +1,100 @@
+/* ===== ADMIN PANEL ===== */
+
+body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-container {
+    padding: 30px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logout-btn {
+    background: red;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background: darkred;
+}
+
+/* Search */
+form input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 15px;
+    background: #0a66c2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #084d99;
+}
+
+/* Table */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+th {
+    background: #0a66c2;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+/* Print Button */
+.print-btn {
+    background: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.print-btn:hover {
+    background: darkgreen;
+}
+
+/* Print view */
+@media print {
+    .print-btn, form, .logout-btn {
+        display: none;
+    }
+}

@@ -8,17 +8,17 @@
 
 ## 📌 Overview
 
-The **JP Software Internship Management System** is a modern, responsive web application designed to provide industry-level internship training and application management.
+The **JP Software Internship Management System** is a full-stack web application designed to manage internship applications efficiently.
 
-This platform allows users to explore internship programs and apply online, while also demonstrating a clean UI, structured design, and real-world project architecture.
+It provides a modern user interface for applicants and a backend system for managing data using PHP and MySQL.
 
 ---
 
 ## 🎯 Objective
 
-* To create a professional internship platform
-* To provide structured training programs for students
-* To demonstrate real-world full-stack web development skills
+* To build a professional internship application platform
+* To provide structured training program information
+* To implement real-world full-stack development concepts
 
 ---
 
@@ -26,34 +26,17 @@ This platform allows users to explore internship programs and apply online, whil
 
 ### 👤 User Side
 
-* Explore internship programs (Web, Software, Mobile)
-* Apply through a responsive form
-* Input validation and clean UI
-* Smooth animations and modern design
+* Internship application form
+* Responsive UI design
+* Input validation
+* Clean and modern interface
 
-### 🎓 Internship Programs
+### 🛠️ Admin Panel
 
-* Web Development
-* Software Development
-* Mobile App Development
-
-Each program includes:
-
-* 6-month structured roadmap
-* Live sessions + assignments
-* Real-world projects
-* Certification
-
----
-
-## 🧩 Sections Included
-
-* 🏠 Hero Section (Landing UI)
-* 📚 Programs Section
-* 🗓️ Training Timeline
-* 🎁 Benefits Section
-* 📞 Contact / Application Form
-* 📄 Footer with social links
+* Admin login system
+* View all applications
+* Delete records
+* Manage user data
 
 ---
 
@@ -65,90 +48,99 @@ Each program includes:
 * CSS3
 * JavaScript
 
+### ⚙️ Backend
+
+* PHP
+
+### 🗄️ Database
+
+* MySQL
+
 ### 🎯 UI Libraries
 
 * Bootstrap 5
 * Font Awesome
-* Google Fonts (Poppins)
-* AOS (Animation on Scroll)
+* Google Fonts
+* AOS Animation
 
 ---
 
 ## 🏗️ Project Structure
 
-```
+```id="0xb0yg"
 JP-Software-Internship-M.S/
 │
 ├── index.html
 ├── css/
-│   └── style.css
+│   ├── style.css
+│   ├── admin.css
+│   └── login.css
+│
 ├── js/
 │   └── script.js
+│
+├── php/
+│   ├── config.php
+│   ├── submit.php
+│   ├── login.php
+│   ├── logout.php
+│   ├── admin.php
+│   └── delete.php
+│
+├── database/
+│   └── db.sql
+│
 ├── images/
-│   └── (logo & assets)
+│   └── (assets)
+│
+├── README.md
 ```
 
 ---
 
-## 🎨 UI Highlights
+## ⚙️ Installation & Setup (Full Project)
 
-* Fully responsive design 📱
-* Smooth animations using AOS ✨
-* Modern gradient hero section 🎯
-* Clean card-based layout 🧩
-* Professional color scheme 🎨
+1. Install XAMPP / WAMP
+2. Copy project folder into `htdocs`
+3. Start Apache & MySQL
+4. Import database file (`db.sql`) in phpMyAdmin
+5. Configure database in `config.php`
+6. Run project:
 
----
-
-## 📊 Internship Roadmap
-
-* Month 1-2: Fundamentals
-* Month 3: Backend + Database
-* Month 4: Full Project Development
-* Month 5: Live Project
-* Month 6: Final Project + Interview Prep
-
----
-
-## 📜 Certificates
-
-* Internship Certificate
-* Project Completion Certificate
-* Experience Letter (Top Performers)
-
----
-
-## ⚙️ Installation & Setup
-
-1. Clone the repository:
-
-```
-git clone https://github.com/azeem-5226/JP-Software-Internship-M.S.git
-```
-
-2. Open project folder
-
-3. Run in browser:
-
-```
-index.html
+```id="paf34u"
+http://localhost/your-project-folder/
 ```
 
 ---
 
 ## 🚀 Deployment
 
-This project is deployed using **GitHub Pages**.
+This project is partially deployed using GitHub Pages.
+
+🔗 **Live Demo:** https://azeem-5226.github.io/JP-Software-Internship-M.S/
+
+> ⚠️ **Important Note:**
+> GitHub Pages supports only static websites.
+> Therefore, backend functionalities (PHP & MySQL) are not active in the live demo.
+> Only the frontend UI is visible.
+
+---
+
+## 📊 Features Overview
+
+* Form submission with PHP
+* Data storage using MySQL
+* Admin dashboard for managing records
+* Clean UI with Bootstrap
 
 ---
 
 ## 🔮 Future Enhancements
 
-* Backend integration (PHP + MySQL)
-* Admin dashboard
-* Email notifications
-* User authentication system
-* Real-time data storage
+* Email notification system
+* Advanced admin dashboard
+* User authentication improvements
+* Full deployment on hosting server
 
 ---
 
@@ -156,12 +148,6 @@ This project is deployed using **GitHub Pages**.
 
 **Azeem Noor Muhammad**
 🎓 B.Sc. IT – Final Year
-
----
-
-## 💡 Note
-
-This project is created for educational and internship demonstration purposes, showcasing frontend and UI/UX development skills.
 
 ---
 

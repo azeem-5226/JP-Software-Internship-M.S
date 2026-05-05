@@ -217,6 +217,21 @@ document.querySelector('.navbar-toggler').addEventListener('click', function() {
     document.body.style.overflow = 'hidden';
 });
 
+
+
+// Close menu on link click (mobile)
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+const navbarCollapse = document.querySelector('.navbar-collapse');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false
+        });
+        bsCollapse.hide();
+    });
+});
+
 document.querySelector('.navbar-collapse').addEventListener('hidden.bs.collapse', function() {
     document.body.style.overflow = 'auto';
 });
